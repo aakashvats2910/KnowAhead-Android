@@ -10,6 +10,5 @@ This app works on the base: By the people and for the people.
 There are also few important things that have to be done by the applicaiton in order to ue it successfully.
 > The person marking the location should be trustable.
 > Person marking the location should mark the right location, not the fake one.
-<br/>
 # NOTICE:
 This application is only for educational purpose of how an app works, this shall not be used for bad/illegal purposes.
