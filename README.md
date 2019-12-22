@@ -1,5 +1,5 @@
 # KnowAhead-Android
-An android application which tells about where the police is on the road currently. 
+An android application which tells about where the traffic authorities are on the road currently (only static). 
 <br/>
 # How this app work:
 This app works on the base: By the people and for the people.  
