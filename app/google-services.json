@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "904853709700",
+    "firebase_url": "https://knowahead-84741.firebaseio.com",
+    "project_id": "knowahead-84741",
+    "storage_bucket": "knowahead-84741.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904853709700:android:4d7cd368e32bc6bf8f73d1",
+        "android_client_info": {
+          "package_name": "com.myidea.rofy.knowahead"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904853709700-dp033g04i6fc7bdpu1mrh0h9rgch7t6d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myidea.rofy.knowahead",
+            "certificate_hash": "152c3bf789f40d26b5dcd8266b2901f48aaf0133"
+          }
+        },
+        {
+          "client_id": "904853709700-3mlsulfku0u7k9n131imnf61gtn3v6v7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH9EDbfVbd826HBgbHvGTVEuru9IaVk4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904853709700-3mlsulfku0u7k9n131imnf61gtn3v6v7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
