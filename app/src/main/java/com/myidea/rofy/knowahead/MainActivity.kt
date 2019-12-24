@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.annotation.Px
 import com.google.firebase.database.FirebaseDatabase
 import com.myidea.rofy.knowahead.firebase.AppFirebase
 import com.myidea.rofy.knowaheadlibrary.UserLib.AppUser
@@ -24,9 +25,8 @@ class MainActivity : AppCompatActivity() {
         username_text_field = TextView(applicationContext)
         password_text_field = TextView(applicationContext)
 
-
-
         setContentView(main_layout)
+
 
     }
 }

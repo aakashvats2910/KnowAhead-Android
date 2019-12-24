@@ -2,7 +2,7 @@ package PxDp
 
 import android.content.Context
 
-class PxDpUtil {
+public final class PxDpUtil {
 
     lateinit var x: String
 
