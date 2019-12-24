@@ -12,3 +12,5 @@ There are also few important things that have to be done by the applicaiton in o
 > Person marking the location should mark the right location, not the fake one.
 # NOTICE:
 This application is only for educational purpose of how an app works, this shall not be used for bad/illegal purposes.
+[![Release](https://jitpack.io/v/User/Repo.svg)]
+(https://jitpack.io/#User/Repo)
