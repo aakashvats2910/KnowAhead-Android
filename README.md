@@ -13,5 +13,5 @@ There are also few important things that have to be done by the applicaiton in o
 # NOTICE:
 This application is only for educational purpose of how an app works, this shall not be used for bad/illegal purposes.
 # Jitpack.io plugin:
-This repository has a library with the necessary classes, the link to add that dependency is below:
+This repository has a library with the necessary classes, the link to add that dependency is below:  
 [![](https://jitpack.io/v/aakashvats2910/KnowAhead-Android.svg)](https://jitpack.io/#aakashvats2910/KnowAhead-Android)
