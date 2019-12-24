@@ -8,8 +8,8 @@ class AppFirebase constructor() {
     object Static{
 
         // Base initialization of the firebase database.
-        public lateinit var MAIN_FIREBASE_REFERENCE : FirebaseDatabase
-        public lateinit var MAIN_DATABASE_REFERENCE : DatabaseReference
+        public lateinit var MAIN_FIREBASE_REFERENCE: FirebaseDatabase
+        public lateinit var MAIN_DATABASE_REFERENCE: DatabaseReference
 
         // User database reference
         public lateinit var USERS_LIST_DATABASE_REFERENCE : DatabaseReference
