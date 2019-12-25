@@ -42,6 +42,7 @@ dependencies {
 
     // My library dependency
     implementation 'com.github.aakashvats2910:KnowAhead-Android:master-SNAPSHOT'
+    implementation 'com.github.aakashvats2910:KnowAhead-Android:Tag'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

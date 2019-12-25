@@ -1,4 +1,4 @@
-package com.myidea.rofy.knowaheadlibrary.UserLib
+package com.myidea.rofy.knowahead.user_util
 
 public open class AppUser constructor() {
 
