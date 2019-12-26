@@ -1,5 +1,6 @@
 package com.myidea.rofy.knowahead
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
@@ -45,12 +46,13 @@ class MainActivity : AppCompatActivity() {
         // Adding characteristics to use_it_button
         use_it_button.text = "USE IT"
         use_it_button.setOnClickListener {
-
+            startActivity(Intent(this, MapsActivity::class.java))
         }
 
         // Adding main_layout to the screen/window
         main_layout.addView(first_text_view)
         main_layout.addView(second_text_view)
+        main_layout.addView(use_it_button)
         setContentView(main_layout)
 
     }
