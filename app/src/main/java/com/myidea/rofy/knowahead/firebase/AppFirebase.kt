@@ -14,17 +14,21 @@ class AppFirebase constructor() {
         // User database reference
         public lateinit var USERS_LIST_DATABASE_REFERENCE : DatabaseReference
 
+        // Locations of traffic authorities on the road. Those locations are just static.
+        public lateinit var AUTH_LIST_DATABASE_REFERENCE: DatabaseReference
+
+        public fun mandatoryToRun() {
+            MAIN_FIREBASE_REFERENCE = FirebaseDatabase.getInstance()
+            MAIN_DATABASE_REFERENCE = MAIN_FIREBASE_REFERENCE.reference
+        }
+
+        public fun initializationOfDatabase() {
+            USERS_LIST_DATABASE_REFERENCE = MAIN_DATABASE_REFERENCE.child("USERS")
+
+        }
+
     }
 
-    public fun mandatoryToRun() {
-        Static.MAIN_FIREBASE_REFERENCE = FirebaseDatabase.getInstance()
-        Static.MAIN_DATABASE_REFERENCE = Static.MAIN_FIREBASE_REFERENCE.getReference()
-    }
 
-    public fun initializationOfDatabase() {
-        Static.USERS_LIST_DATABASE_REFERENCE = Static.MAIN_DATABASE_REFERENCE.child("USERS")
-        
-
-    }
 
 }

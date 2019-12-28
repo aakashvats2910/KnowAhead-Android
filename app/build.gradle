@@ -40,6 +40,9 @@ dependencies {
     implementation 'com.facebook.android:facebook-android-sdk:5.0.0'
 //    implementation 'com.twitter.sdk.android:twitter-core:3.0'
 
+    // For location.
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+
     // My library dependency
     implementation 'com.github.aakashvats2910:KnowAhead-Android:master-SNAPSHOT'
     implementation 'com.github.aakashvats2910:KnowAhead-Android:Tag'
