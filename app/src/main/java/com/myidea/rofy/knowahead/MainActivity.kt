@@ -1,25 +1,15 @@
 package com.myidea.rofy.knowahead
 
+import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
-import android.text.InputType
-import android.text.SpannableStringBuilder
-import android.util.Log
-import android.view.View
-import android.view.ViewGroup
 import android.widget.*
-import androidx.annotation.Px
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.google.firebase.database.FirebaseDatabase
-import com.myidea.rofy.knowahead.firebase.AppFirebase
-import com.myidea.rofy.knowahead.loction_util.LocationCapture
-import java.security.Permission
-import java.security.Permissions
-import java.util.jar.Manifest
+import com.myidea.rofy.knowahead.capture_util.DeviceIdCapture
+import com.myidea.rofy.knowahead.capture_util.LocationCapture
 
 class MainActivity : AppCompatActivity() {
 
@@ -43,9 +33,9 @@ class MainActivity : AppCompatActivity() {
         use_it_button = Button(applicationContext)
 
         // Granting the permissions.
-        if (ContextCompat.checkSelfPermission(applicationContext, android.Manifest.permission_group.LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(thisActivity, arrayOf(android.Manifest.permission_group.LOCATION), 0)
-        }
+        ActivityCompat.requestPermissions(thisActivity, arrayOf(
+            Manifest.permission.READ_PHONE_STATE,
+            Manifest.permission_group.LOCATION), 0)
 
         // Setting orientation of main_layout
         main_layout.orientation = LinearLayout.VERTICAL
@@ -65,6 +55,9 @@ class MainActivity : AppCompatActivity() {
             // IMEI number is used to mark it as the unique user.
             startActivity(Intent(this, MapsActivity::class.java))
         }
+
+        println("()()()()" + DeviceIdCapture.Static.getDeviceID(applicationContext))
+        println("()()()()" + DeviceIdCapture.Static.getIMEI(applicationContext))
 
         LocationCapture().mandatoryForGettingLocation(applicationContext)
 

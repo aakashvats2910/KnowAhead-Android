@@ -1,4 +1,4 @@
-package com.myidea.rofy.knowahead.loction_util
+package com.myidea.rofy.knowahead.capture_util
 
 import android.content.Context
 import android.os.Looper
