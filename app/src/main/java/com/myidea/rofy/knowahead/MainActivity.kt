@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.widget.*
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.myidea.rofy.knowahead.app_util.MyRandom
 import com.myidea.rofy.knowahead.capture_util.DeviceIdCapture
 import com.myidea.rofy.knowahead.capture_util.LocationCapture
 
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         second_text_view = TextView(applicationContext)
         use_it_button = Button(applicationContext)
 
-        // Granting the permissions.
+        // Granting the permissions necessary.
         ActivityCompat.requestPermissions(thisActivity, arrayOf(
             Manifest.permission.READ_PHONE_STATE,
             Manifest.permission_group.LOCATION), 0)
@@ -55,11 +56,6 @@ class MainActivity : AppCompatActivity() {
             // IMEI number is used to mark it as the unique user.
             startActivity(Intent(this, MapsActivity::class.java))
         }
-
-        println("()()()()" + DeviceIdCapture.Static.getDeviceID(applicationContext))
-        println("()()()()" + DeviceIdCapture.Static.getIMEI(applicationContext))
-
-        LocationCapture().mandatoryForGettingLocation(applicationContext)
 
         // Adding main_layout to the screen/window
         main_layout.addView(first_text_view)
