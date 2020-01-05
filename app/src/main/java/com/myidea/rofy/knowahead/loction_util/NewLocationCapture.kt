@@ -4,11 +4,14 @@ import android.content.Context
 import android.os.Looper
 import android.util.Log
 import com.google.android.gms.location.*
+import com.myidea.rofy.knowahead.MapsActivity
 
 object NewLocationCapture {
 
-    var latitude = 0.0
-    var longitude = 0.0
+    object Static {
+
+    }
+
     private var fusedLocationProviderClient: FusedLocationProviderClient? = null
     private var locationRequest: LocationRequest? = null
     private var locationCallback: LocationCallback? = null
@@ -27,8 +30,9 @@ object NewLocationCapture {
         locationCallback = object : LocationCallback() {
             override fun onLocationResult(locationResult: LocationResult) {
                 for (location in locationResult.locations) {
-                    // ApplicationFirebase.GPS_LATITUDE_DATABASE_REFERENCE.setValue(location.getLatitude());
-                    // ApplicationFirebase.GPS_LONGITUDE_DATABASE_REFERENCE.setValue(location.getLongitude());
+//                    LocationStore.Static.setLatLng(location.latitude, location.longitude)
+                    MapsActivity.Static.updateLocation(location.latitude, location.longitude)
+                    // Just for checking in the log:
                     Log.d(
                         "()() LOCATION",
                         " " + location.latitude + "||" + location.longitude
@@ -58,4 +62,5 @@ object NewLocationCapture {
     fun stopLocationService() {
         fusedLocationProviderClient!!.removeLocationUpdates(locationCallback)
     }
+
 }

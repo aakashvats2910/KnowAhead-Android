@@ -11,6 +11,8 @@ import androidx.core.content.ContextCompat
 import com.myidea.rofy.knowahead.app_util.MyRandom
 import com.myidea.rofy.knowahead.capture_util.DeviceIdCapture
 import com.myidea.rofy.knowahead.capture_util.LocationCapture
+import com.myidea.rofy.knowahead.loction_util.LocationStore
+import com.myidea.rofy.knowahead.loction_util.NewLocationCapture
 
 class MainActivity : AppCompatActivity() {
 
@@ -56,6 +58,8 @@ class MainActivity : AppCompatActivity() {
             // IMEI number is used to mark it as the unique user.
             startActivity(Intent(this, MapsActivity::class.java))
         }
+
+        NewLocationCapture.mandatoryForGettingLocation(applicationContext)
 
         // Adding main_layout to the screen/window
         main_layout.addView(first_text_view)
